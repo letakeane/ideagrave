@@ -38,28 +38,33 @@ label {
 
 input {
   margin-bottom: 10px;
+  text-align: left;
 }
 
 #submit {
-  width: 200px;
+  width: 100px;
+  padding: 10px;
   margin: auto;
+  cursor: pointer;
 }
 
 #cemetery {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: flex-start;
 }
 
 .grave {
-  width: 200px;
+  width: 225px;
   min-height: 250px;
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
   border-left: 20px solid gray;
   background: darkgrey;
+  padding: 10px;
   padding-top: 50px;
   text-shadow: 0px -1px 0px #222, 0px 1px 0px lightgray;
+  margin: 20px;
 }
 
 .grave h2 {
