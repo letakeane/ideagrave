@@ -59,7 +59,6 @@ const makeGraves = ideas => {
 }
 
 const displayIdeas = () => {
-  cemetery.innerHTML = '';
   cemetery.innerHTML = makeGraves(ideas);
 }
 
