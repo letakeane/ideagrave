@@ -30,3 +30,12 @@ Questions:
   - The tripping point is the need for the two `retrieveData` calls, one for the title input and one for the description input.
   - Is it better to refactor the `retrieveData` function to handle both at once, combining with the `makeIdea` function?
   - Or is it better to leave it as is, and to adjust the `pipelining` function?
+
+## To Dos
+
+1. Break `index.js` into multiple files
+  1. Move DOM functionality into its own file
+  1. Move data model manipulation into its own file
+1. Create getters and setters for `ideas` and a singular `idea`
+1. Wrap functionality in a function
+1. Move query selectors into functions
