@@ -1,0 +1,73 @@
+* {
+  font-family: sans-serif;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(ghostwhite, rgb(31, 57, 0));
+  height: 100vh;
+}
+
+h1 {
+  font-family: serif;
+  font-variant-caps: small-caps;
+  font-size: 60px;
+  letter-spacing: 5px;
+  margin-bottom: 0;
+}
+
+.tagline {
+  font-style: italic;
+  color: gray;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+form {
+  width: 500px;
+  margin: auto;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  text-align: left;
+}
+
+input {
+  margin-bottom: 10px;
+}
+
+#submit {
+  width: 200px;
+  margin: auto;
+}
+
+#cemetery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.grave {
+  width: 200px;
+  min-height: 250px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-left: 20px solid gray;
+  background: darkgrey;
+  padding-top: 50px;
+  text-shadow: 0px -1px 0px #222, 0px 1px 0px lightgray;
+}
+
+.grave h2 {
+  font-family: serif;
+  font-size: 50px;
+  margin: 0;
+}
+
+.grave h3 {
+  margin: 0;
+}
