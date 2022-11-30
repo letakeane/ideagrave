@@ -16,6 +16,14 @@ const pipeline = (...functions) => {
   }
 }
 
+const head = arr => {
+  return arr[0]
+}
+
+const tail = arr => {
+  return arr.slice(1)
+}
+
 const retrieveData = element => {
   return element.value;
 }
