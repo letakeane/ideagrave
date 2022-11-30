@@ -50,7 +50,7 @@ const clearInputs = (titleInput, descInput) => {
 
 const handleSubmit = event => {
   event.preventDefault();
-  ideas = addIdea(makeIdea(retrieveData(titleInput), retrieveData(descInput)));
+  ideas = pipeline(addTitle, addDescription, addIdea)({})
 
   clearInputs(titleInput, descInput);
   displayIdeas(ideas);
