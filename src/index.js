@@ -1,4 +1,4 @@
-console.log('Goodbye world!');
+import app from './app.js';
 
 // object oriented
 let ideas = [ {title: 'A very bad idea', desc: 'which should never be remembered'}];
