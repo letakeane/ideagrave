@@ -28,8 +28,12 @@ const retrieveData = element => {
   return element.value;
 }
 
-const makeIdea = (title, desc) => {
-  return {title, desc};
+const addDescription = idea => {
+  return {...idea, desc: retrieveData(descInput)}
+}
+
+const addTitle = idea => {
+  return {...idea, title: retrieveData(titleInput)}
 }
 
 const addIdea = newIdea => {
