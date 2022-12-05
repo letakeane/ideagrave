@@ -16,12 +16,24 @@ const pipeline = (...functions) => {
   }
 }
 
+const head = arr => {
+  return arr[0]
+}
+
+const tail = arr => {
+  return arr.slice(1)
+}
+
 const retrieveData = element => {
   return element.value;
 }
 
-const makeIdea = (title, desc) => {
-  return {title, desc};
+const addDescription = idea => {
+  return {...idea, desc: retrieveData(descInput)}
+}
+
+const addTitle = idea => {
+  return {...idea, title: retrieveData(titleInput)}
 }
 
 const addIdea = newIdea => {
@@ -38,7 +50,7 @@ const clearInputs = (titleInput, descInput) => {
 
 const handleSubmit = event => {
   event.preventDefault();
-  ideas = addIdea(makeIdea(retrieveData(titleInput), retrieveData(descInput)));
+  ideas = pipeline(addTitle, addDescription, addIdea)({})
 
   clearInputs(titleInput, descInput);
   displayIdeas(ideas);
