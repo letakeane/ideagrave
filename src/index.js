@@ -1,47 +1,18 @@
 import app from './app.js';
+const { getIdeas, setIdeas, createIdea, addIdea } = app();
 
-// object oriented
-let ideas = [ {title: 'A very bad idea', desc: 'which should never be remembered'}];
+// initial idea array
+setIdeas(addIdea(createIdea('A very bad idea', 'which should never be remembered')));
+
+// query selectors
 const titleInput = document.querySelector('#title');
 const descInput = document.querySelector('#desc');
 const submitBtn = document.querySelector('#submit');
 const cemetery = document.querySelector('#cemetery');
 
-const pipeline = (...functions) => {
-  if (functions.length === 0) return input => input;
-  if (functions.length === 1) return input => head(functions)(input);
-
-  return function(input) {
-    return pipeline(...tail(functions))(head(functions)(input));
-  }
-}
-
-const head = arr => {
-  return arr[0]
-}
-
-const tail = arr => {
-  return arr.slice(1)
-}
-
 const retrieveData = element => {
-  return element.value;
-}
-
-const addDescription = idea => {
-  return {...idea, desc: retrieveData(descInput)}
-}
-
-const addTitle = idea => {
-  return {...idea, title: retrieveData(titleInput)}
-}
-
-const addIdea = newIdea => {
-  const allIdeas = ideas.map(idea => idea);
-  allIdeas.push(newIdea);
-
-  return allIdeas;
-}
+    return element.value
+  }
 
 const clearInputs = (titleInput, descInput) => {
   titleInput.value = '';
@@ -50,10 +21,12 @@ const clearInputs = (titleInput, descInput) => {
 
 const handleSubmit = event => {
   event.preventDefault();
-  ideas = pipeline(addTitle, addDescription, addIdea)({})
+  let newTitle = retrieveData(titleInput)
+  let newDesc = retrieveData(descInput)
+  setIdeas(addIdea(createIdea(newTitle, newDesc)));
 
   clearInputs(titleInput, descInput);
-  displayIdeas(ideas);
+  displayIdeas(getIdeas());
 }
 
 const makeGraves = ideas => {
@@ -71,7 +44,7 @@ const makeGraves = ideas => {
 }
 
 const displayIdeas = () => {
-  cemetery.innerHTML = makeGraves(ideas);
+  cemetery.innerHTML = makeGraves(getIdeas());
 }
 
 submitBtn.addEventListener('click', handleSubmit);
