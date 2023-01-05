@@ -28,12 +28,18 @@ At this point, I still have way more questions than takeaways, but here's what I
 
 Questions:
 - Is this functional???????? That's the big one lol
-- Touching the DOM feels non-functional and full of possible side effects
+- ~~Touching the DOM feels non-functional and full of possible side effects~~
   - How do we interact with the DOM as functionally as possible?
-- I replicated a pipelining function but can't figure out how to use it to replace line 41
+    - Answer: separate files so DOM interactions are limited to one place
+- ~~I replicated a pipelining function but can't figure out how to use it to replace line 41~~
+  - Note: this was removed in a recent commit.
   - The tripping point is the need for the two `retrieveData` calls, one for the title input and one for the description input.
   - Is it better to refactor the `retrieveData` function to handle both at once, combining with the `makeIdea` function?
   - Or is it better to leave it as is, and to adjust the `pipelining` function?
+
+## Reflections
+
+**[Reflections](REFLECTIONS.md) for the Week 5 FE Team Summit.**
 
 ## To Dos
 
