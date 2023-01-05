@@ -11,6 +11,10 @@ This project is intended as solo practice in learning Functional Programming (af
 1. Start up the parcel server using `npm start`
 1. Navigate to `localhost:1234` in your browser to view.
 
+## View
+
+![Screenshot of app](docassets/appView.png)
+
 ## Takeaways & Questions
 
 At this point, I still have way more questions than takeaways, but here's what I've gleaned thus far:
@@ -33,9 +37,9 @@ Questions:
 
 ## To Dos
 
-1. Break `index.js` into multiple files
-  1. Move DOM functionality into its own file
-  1. Move data model manipulation into its own file
-1. Create getters and setters for `ideas` and a singular `idea`
-1. Wrap functionality in a function
+~~1. Break `index.js` into multiple files~~
+  ~~1. Move DOM functionality into its own file~~
+  ~~1. Move data model manipulation into its own file~~
+~~1. Create getters and setters for `ideas` and a singular `idea`~~
+~~1. Wrap functionality in a function~~
 1. Move query selectors into functions
