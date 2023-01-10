@@ -28,11 +28,9 @@ I found [this stack overflow post](https://stackoverflow.com/questions/36636/wha
 
 The [`app.js` file](https://github.com/letakeane/ideagrave/blob/main/src/app.js) is a good example of this.
 
-You can see that the ideas array is declared inside the `app` function. `getIdeas`, `setIdeas`, and `addIdea` all reference the local `ideas` variable.
-
-The [`return` statement](https://github.com/letakeane/ideagrave/blob/679445cae64ef0b186a83cfbe9246cb37be7d8f3/src/app.js#L20) of the `app` function does not return the ideas variable.
-
-But, as you can see in the [`index.js` file](https://github.com/letakeane/ideagrave/blob/main/src/index.js), we can use the getter, setter, and add functions from `app` to [access and update that local `ideas` variable](https://github.com/letakeane/ideagrave/blob/679445cae64ef0b186a83cfbe9246cb37be7d8f3/src/index.js#L5).
+- You can see that the ideas array is declared inside the `app` function. `getIdeas`, `setIdeas`, and `addIdea` all reference the local `ideas` variable.  
+- The [`return` statement](https://github.com/letakeane/ideagrave/blob/679445cae64ef0b186a83cfbe9246cb37be7d8f3/src/app.js#L20) of the `app` function does not return the ideas variable.  
+- But, as you can see in the [`index.js` file](https://github.com/letakeane/ideagrave/blob/main/src/index.js), we can use the getter, setter, and add functions from `app` to [access and update that local `ideas` variable](https://github.com/letakeane/ideagrave/blob/679445cae64ef0b186a83cfbe9246cb37be7d8f3/src/index.js#L5).
 
 ## Curried Functions
 
