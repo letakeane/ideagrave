@@ -18,7 +18,9 @@ There is a pure function in the 🔗[`index.js`](https://github.com/letakeane/id
 
 Higher order functions: functions that take in a function (declaration/definition) as an argument and returns a function (declaration/definition) as a result
 
-My app does not contain any HOFs. There are instances when a function is called with an invoked function, but that is not a HOF.
+My app does not contain any HOFs, TECHNICALLY. There are instances when a function is called with an invoked function, but that is not a HOF.
+
+The `app` function in my 🔗[`app.js` file](https://github.com/letakeane/ideagrave/blob/main/src/app.js) returns an object containing several functions. Though it does not take in any functions as arguments, I might still define this as a HOF.
 
 ## Closures
 
