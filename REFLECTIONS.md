@@ -4,7 +4,7 @@
 
 Pure functions: functions which, given the same input, will always evaluate to the same value. Predictable input === predictable output.
 
-Many of the functions in my [`app.js`](https://github.com/letakeane/ideagrave/blob/main/src/app.js) file are pure functions, notably:  
+Many of the functions in my 🔗[`app.js`](https://github.com/letakeane/ideagrave/blob/main/src/app.js) file are pure functions, notably:  
 - 🔗[`getIdeas`](https://github.com/letakeane/ideagrave/blob/679445cae64ef0b186a83cfbe9246cb37be7d8f3/src/app.js#L4)
 - 🔗[`setIdeas`](https://github.com/letakeane/ideagrave/blob/679445cae64ef0b186a83cfbe9246cb37be7d8f3/src/app.js#L8)
 - 🔗[`addIdea`](https://github.com/letakeane/ideagrave/blob/679445cae64ef0b186a83cfbe9246cb37be7d8f3/src/app.js#L16)
