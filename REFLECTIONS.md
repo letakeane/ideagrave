@@ -59,7 +59,7 @@ At one point in the history of this app, I had a pipeline (it was not useful and
 
 The pipeline was invoked in the 🔗[`handleSubmit` function](https://github.com/letakeane/ideagrave/blob/ad32e48937a1dc2dcbd4bdce8be181ea26e60609/src/index.js#L51-L57), and it took in 🔗[three functions](https://github.com/letakeane/ideagrave/blob/ad32e48937a1dc2dcbd4bdce8be181ea26e60609/src/index.js#L31-L44) to create an idea object.
 
-Ultimately, it didn't feel useful or more legible, so in the 🔗[next iteration](https://github.com/letakeane/ideagrave/blob/main/src/app.js) of the app, I removed it.
+**Ultimately, it didn't feel useful or more legible, so in the 🔗[next iteration](https://github.com/letakeane/ideagrave/blob/main/src/app.js) of the app, I removed it.**
 
 ## Data Model & DOM separation
 
